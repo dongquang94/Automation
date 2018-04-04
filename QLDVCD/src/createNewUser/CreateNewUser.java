@@ -51,17 +51,15 @@ public class CreateNewUser {
 //			Thread.sleep(20);
 			
 			//Click choose info manage -- Quang: Check cho anh cho nay voi. Dang khong dung
-			WebElement inforManage = driver.findElement(
-					By.xpath("//div[@id=\"menu\"]//div[@class=\"main-sidebar\"]//section[@class=\"sidebar\"]//ul[@class=\"sidebar-menu tree\"]//li[@class")
-					);
-																  
+			//WebElement inforManage = driver.findElement(By.xpath("//div[@id=\"menu\"]//div[@class=\"main-sidebar\"]//section[@class=\"sidebar\"]//ul[@class=\"sidebar-menu tree\"]//li[@class"));
+			WebElement inforManage = driver.findElement(By.xpath("//*[@id='menu']/div[2]/section/ul/li[2]/a/span[1]"));													  
 			inforManage.click();
-			Thread.sleep(20);
+			Thread.sleep(500);
 			
 			//Click manage unionists button
 			WebElement unionistsManage = driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/section/ul/li[2]/ul/li[1]/a/span[1]"));
 			unionistsManage.click();
-			Thread.sleep(20);
+			Thread.sleep(500);
 			
 			//Click uninonist
 			WebElement uninonist = driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/section/ul/li[2]/ul/li[1]/ul/li[1]/a/span[1]"));
