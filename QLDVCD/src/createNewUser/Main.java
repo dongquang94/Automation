@@ -6,9 +6,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Login loginProcess = new Login();
+		CreateNewUser createUserProcess = new CreateNewUser();
 		try {
-			loginProcess.getLogin();
+			createUserProcess.getLogin();
+			createUserProcess.CreateUser();
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
